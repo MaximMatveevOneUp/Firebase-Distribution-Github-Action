@@ -45,6 +45,8 @@ output=$(firebase \
 
 status=$?
 
+echo $output
+
 if [ -n "${INPUT_TOKEN}" ] ; then
     echo ${TOKEN_DEPRECATED_WARNING_MESSAGE}
 fi
